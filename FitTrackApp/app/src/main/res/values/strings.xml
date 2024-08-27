@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FitTrackApp</string>
+    <string name="home">Home</string>
+    <string name="c_consumed">Calories consumed</string>
+    <string name="login">Login</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="signuptitle">Sign Up</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileDetails">
+
+    <include
+        layout = "@layout/toolbar_layout"/>
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="132dp"
+        android:text="Profile Details"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="317dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:text="Enter you data so FitTrack can costumize your targets "
+        android:textColor="#7BD17F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="196dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/baseline_female_24"
+            android:drawablePadding="8dp"
+            android:hint="Female"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_cake_24"
+            android:drawablePadding="8dp"
+            android:hint="25 years"
+            android:padding="8dp"
+            android:inputType="number"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_height_24"
+            android:drawablePadding="8dp"
+            android:hint="1.70 mts"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/baseline_weight"
+            android:drawablePadding="8dp"
+            android:hint="50 kg"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/material_dynamic_primary50"
+            android:onClick="next"
+            android:text="Next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvnewUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:minHeight="48dp"
+            android:onClick="login"
+            android:text="Already an user? Login"
+            android:textAlignment="center"
+            android:textColor="#519354"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
