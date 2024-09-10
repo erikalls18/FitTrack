@@ -92,7 +92,7 @@ public class BurnedCaloriesActivity extends MainActivity {
         }
 
 
-        api_key ="4MRkoOa72HZ8LqFI8mLB1g==6yi2y47uMa600hSE";
+        api_key ="";
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.api-ninjas.com/")
                 .addConverterFactory(GsonConverterFactory.create())
